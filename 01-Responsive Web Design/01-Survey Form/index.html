@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>My Survey Form</title>
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">My Survey Form</h1>
+      <p id="description">This is the form description</p>
+      <form id="survey-form">
+        <!-- Name -->
+        <label
+          id="name-label"
+          for="name"
+          >Name:</label
+        >
+        <input
+          id="name"
+          type="text"
+          required
+          placeholder="Enter your name" />
+
+        <!-- Email -->
+        <label
+          id="email-label"
+          for="email"
+          >Email:</label
+        >
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Enter your email" />
+
+        <!-- Age -->
+        <label
+          id="number-label"
+          for="number"
+          >Age:</label
+        >
+        <input
+          id="number"
+          type="number"
+          min="0"
+          max="999"
+          placeholder="Age" />
+
+        <!-- Status (Dropdown) -->
+        <label for="dropdown">Status:</label>
+        <select id="dropdown">
+          <option value="student">Student</option>
+          <option value="graduate">Graduate</option>
+        </select>
+
+        <!-- Gender (Radio) -->
+        <label>Gender:</label>
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value="man" />
+          Man
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value="woman" />
+          Woman
+        </label>
+
+        <!-- Employment (Checkbox) -->
+        <label>Employment:</label>
+        <label>
+          <input
+            type="checkbox"
+            value="employed" />
+          Employed
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            value="unemployed" />
+          Unemployed
+        </label>
+
+        <!-- Textarea -->
+        <textarea placeholder="Tell us about yourself..."></textarea>
+
+        <!-- Submit Button -->
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
